@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cors());
 app.use('/api/users', require('./routes/users'));
 
-app.use(express.static(path.join(__dirname,'../client/dist')));
+app.use(express.static(path.join(__dirname,'../../client/dist')));
 app.get('*', (req, res) => res.sendFile(path.resolve(__dirname,'client','dist','index.html')));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
