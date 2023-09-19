@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Layout from "../components/Layout";
 import { Card, Col, Container, Form, Row } from "react-bootstrap";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import Loader from "../components/Loader";
-import Error from "../components/Error";
-
-import NotFound from "../components/NotFound";
 import { useGetAllUsersQuery } from "../slices/adminApiSlice";
 
 
-
 export default function Home() {
-
   const {data,isLoading} = useGetAllUsersQuery();
 if(isLoading){
   return <Loader/>

@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Sidebar from "./Sidebar";
 import styled from "styled-components";
-import { setCollapsed } from "../slices/appSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { FaTimes } from "react-icons/fa";
-import { MdMenuOpen } from "react-icons/md";
 import { Col, Container, Row } from "react-bootstrap";
 
 export default function Layout({ children }) {

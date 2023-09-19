@@ -1,7 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 import { useDispatch, useSelector } from "react-redux";
 import {useLogoutMutation } from "../slices/userApiSlice";
 import { logout } from "../slices/authSlice";
@@ -10,7 +7,6 @@ import styled from "styled-components";
 import { GrNotification } from "react-icons/gr";
 import { useEffect, useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
-import logo from "/logo.png";
 import { toast } from "react-hot-toast";
 function Header() {
   const [showLinks, setShowLinks] = useState(false);

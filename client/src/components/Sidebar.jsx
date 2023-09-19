@@ -1,11 +1,8 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { FaTachometerAlt, FaAdn, FaUsers, FaTimes,FaDochub} from "react-icons/fa";
 import { MdMenuOpen } from "react-icons/md";
-import {BiLowVision} from 'react-icons/bi';
-import {AiOutlineSchedule} from 'react-icons/ai';
 import {CgProfile} from 'react-icons/cg';
 import { useDispatch, useSelector } from "react-redux";
 import { setCollapsed } from "../slices/appSlice";
