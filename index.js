@@ -1,7 +1,9 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const PORT = 8000;
+require('dotenv').config();
+
+const PORT = process.env.PORT || 8000;
 // const __dirname = path.resolve();
 // app.get('/',(req,res)=>res.send("Server Up"));
 app.get('/users',(req,res)=>res.json([
