@@ -23,6 +23,8 @@ import Users from "./pages/admin/Users.jsx";
 
 import ForgotPassword from "./pages/ForgotPassword.jsx";
 import ResetPassword from "./pages/ResetPassword.jsx";
+import PaymentSuccess from "./components/PaymentSuccess.jsx";
+import Error from "./components/Error.jsx";
 
 
 const router = createBrowserRouter(
@@ -39,6 +41,8 @@ const router = createBrowserRouter(
         <Route index path="/" element={<Home />} />
       
         <Route path="/profile" element={<Profile />} />
+        <Route path="/success" element={<PaymentSuccess/>} />
+        <Route path="/error?" element={<Error/>} />
      
         <Route path="/admin/users" element={<Users />} />
       </Route>

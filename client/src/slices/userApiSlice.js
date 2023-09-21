@@ -1,5 +1,6 @@
 import { apiSlice } from "./apiSlice";
 const URL = '/api/users';
+const PAY_URL = '/api/bkash';
 
 export const userApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
@@ -71,6 +72,15 @@ export const userApiSlice = apiSlice.injectEndpoints({
         }),
 
 
+        paymentCreate: builder.mutation({
+            query: () => ({
+                url: `${PAY_URL}/payment/create`,
+                method: 'POST',
+            }),
+            invalidatesTags: ['User']
+        }),
+
+
     })
 });
 
@@ -86,5 +96,7 @@ export const {
 
     useForgotPasswordMutation,
     useResetPasswordMutation,
+
+    usePaymentCreateMutation,
 
 } = userApiSlice;

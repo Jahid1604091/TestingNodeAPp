@@ -11,8 +11,7 @@ export default function Error({ error }) {
           <Row>
             <Col>
               <div className="alert alert-danger text-center">
-                <h2> {error.data?.msg}</h2>
-                <h3>Status Code : {error.status}</h3>
+              error
               </div>
             </Col>
           </Row>
